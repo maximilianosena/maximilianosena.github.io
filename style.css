@@ -1,0 +1,155 @@
+body{
+    background: linear-gradient(0deg, rgba(87,115,72,1) 0%, rgba(33,157,60,1) 100%);
+        font-family: "Calibri";
+    }
+    
+    h1{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 3.5px;
+    }
+    
+    /*Para ajustar la disposicion del texto y la imagen*/
+    .formato_ini{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       align-items: center;
+    }
+    
+    #img_perfil{
+        width: 120px;
+        height: 150px;
+        border-radius: 15px;
+        display: block;
+        margin: auto;
+    }
+    
+    #img_perfil:hover{
+      transform: scale(1.2);
+      box-shadow:5px 10px 15px rgba(9, 65, 31, 0.664);
+    }
+    
+    a{
+       color: rgba(6, 43, 21, 0.664)
+    }
+    
+    .text{
+    position: absolute;
+    text-align: center;
+    background-color: rgba(9, 65, 31, 0.664);
+    color: whitesmoke;
+    }
+    
+    .text p{
+        font-family: impact;
+        letter-spacing: 1.5px;
+    }
+    
+    .text span{
+        opacity:0;
+    position: relative;
+    }
+    
+    .text:hover span{
+    opacity: 1;
+    }
+    .presentacion, .menu, 
+    #contacto{
+    text-align: center;
+    }
+    
+    /*Genero espacios entre los elementos, y un margen con relación al borde de la pág*/
+    .menu{
+        display: flex;
+    justify-content: space-around;
+    }
+    
+    /*Blurreo la barra de navegación*/
+    .menu:hover a{
+        filter: blur(1.5px);
+    }
+    
+    /*Resalto el enlace al pasar por encima, sacandole el blurreo*/
+    .menu a:hover{
+        filter: none;
+        font-size: 120%;
+        color: aliceblue;
+    }
+    
+    
+    h2{
+        color: antiquewhite;
+    }
+    
+    h2::first-letter{
+        background-color: rgba(9, 65, 31, 0.664) ;
+        font-weight: bolder; 
+        font-size: 150%;
+    }
+    
+    #trabajo{
+        border: solid;
+        text-align: center;
+    }
+    
+    #trabajo th, #trabajo td{
+        border: 1px solid;
+    }
+    
+    #ct li:hover{
+        background-color: black;
+        color: whitesmoke;
+        text-align: center;
+        }
+    
+    span.oculto{
+        opacity: 0;
+    }
+    
+    #ct li:hover .oculto{
+        opacity: 1;
+    }
+    
+    #educacion table{
+        border: solid;
+    }
+    
+    .img_trabajo img{
+        width: 640px;
+        height: 360px;
+    }
+    
+    
+    /*opacity opaca los colores*/
+    .img_trabajo img:hover{
+    box-shadow: 2px 2px black;
+    opacity: .4;
+    }
+    
+    #social a{
+        border: solid 1px;
+        border-radius: 50%;
+    }
+    
+    #social a:hover{
+        font-size: 120%;
+        color: aliceblue;
+    }
+    
+    .botones #btn_enviar:hover{
+        color: aliceblue;
+        background-color: green;
+    }
+    
+    .botones #btn_borrar:hover{
+        color: aliceblue;
+        background-color: red;
+    }
+    
+    a#ultimo_link:hover{
+        font-size: medium;
+        color:black
+    }
+    
+    #asunto:focus{
+        background-color: rgb(194, 192, 192);
+    }
